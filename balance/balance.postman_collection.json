@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "546d685f-dfe0-4c2b-b384-d3a1dc8e170e",
+		"name": "balance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://balance.loc/api/balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"balance.userBalance\",\n    \"params\": {\n        \"user_id\": 1\n    },\n    \"id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://balance.loc/api/balance",
+					"protocol": "http",
+					"host": [
+						"balance",
+						"loc"
+					],
+					"path": [
+						"api",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://balance.loc/api/balance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"history\",\n    \"params\": {\n        \"limit\": 3,\n        \"user_id\":1\n    },\n    \"id\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://balance.loc/api/balance",
+					"protocol": "http",
+					"host": [
+						"balance",
+						"loc"
+					],
+					"path": [
+						"api",
+						"balance"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
